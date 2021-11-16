@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prasad Poojary</title>
+    <style type="text/css">
+        *{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+section
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    
+}
+
+.container
+{
+    width:30vw;
+    height:30vw;
+    max-width: 500px;
+    min-width: 350px;
+    max-height: 500px;
+    min-height: 350px;
+    position: relative;
+
+}
+
+.container div 
+{
+    width:100px;
+    height:100px;
+    position: absolute;
+    border-radius: 50px;
+    transition: .5s ease-in-out;
+    
+}
+
+.container div:nth-child(1)
+{
+    top:0px;
+    background:red;
+    z-index: 4;
+    
+}
+
+
+
+
+.container div:nth-child(2)
+{
+    top:0px;
+    right:0px;
+    background:yellow;
+    z-index: 3;
+}
+
+
+
+.container div:nth-child(3)
+{
+    bottom:0px;
+    background:green;
+    z-index:1;
+}
+
+
+.container div:nth-child(4)
+{
+    bottom:0px;
+    right:0px;
+    background:#3888e4;
+    z-index: 2;
+}
+
+
+/* Button Controlls style */
+
+.controlls
+{
+    margin-top: 60px;
+    width:30vw;
+    height:70px;
+    max-width: 500px;
+    min-width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controlls button
+{
+    width:100px;
+    padding:10px 0px;
+    background:#007780;
+    color:white;
+    outline: none;
+    cursor:pointer;
+}
+
+
+
+/* Dynamic class with style */
+
+.startAnimation div:nth-child(1)
+{
+    animation: AnimateObjectOne 14s ease-in-out infinite;
+}
+
+.startAnimation div:nth-child(2)
+{
+    animation: AnimateObjectTwo 14s ease-in-out infinite;
+}
+
+.startAnimation div:nth-child(3)
+{
+    animation: AnimateObjectFour 14s ease-in-out infinite;
+}
+
+.startAnimation div:nth-child(4)
+{
+    animation: AnimateObjectThree 14s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+/* Animation for Fist Object (red) */
+
+@keyframes AnimateObjectOne
+{
+    0%
+    {
+        width:100px;
+    }
+
+    10%
+    {
+        background:yellow;
+        width:100%;
+    }
+
+    20%
+    {
+        background:yellow;
+        width:100px;
+    }
+
+    25%
+    {
+        background:yellow;
+        width:100px;
+    }
+
+    35%
+    {
+        background:#3888e4;
+        width:100%;
+    }
+    45%
+    {
+        background:#3888e4;
+        width:100px;
+    }
+
+    50%
+    {
+        background:#3888e4;
+        width:100px;
+    }
+
+    60%
+    {
+        background:green;
+        width:100%;
+    }
+    70%
+    {
+        background:green;
+        width:100px;
+    }
+
+    75%
+    {
+        background:green;
+        width:100px;
+    }
+
+    85%
+    {
+        background:red;
+        width:100%;
+    }
+    95%
+    {
+        background:red;
+        width:100px;
+    }
+
+    100%
+    {
+        background:red;
+        width:100px;
+    }
+
+
+}
+
+
+/* Animation for Second object ( Yellow )  */
+
+@keyframes AnimateObjectTwo
+{
+    0%
+    {
+        height:100px;
+    }
+
+    10%
+    {
+        background:#3888e4;
+        height:100%;
+    }
+
+    20%
+    {
+        background:#3888e4;
+        height:100px;
+    }
+
+    25%
+    {
+        background:#3888e4;
+        height:100px;
+    }
+
+    35%
+    {
+        background:green;
+        height:100%;
+    }
+    45%
+    {
+        background:green;
+        height:100px;
+    }
+
+    50%
+    {
+        background:green;
+        height:100px;
+    }
+
+    60%
+    {
+        background:red;
+        height:100%;
+    }
+    70%
+    {
+        background:red;
+        height:100px;
+    }
+
+    75%
+    {
+        background:red;
+        height:100px;
+    }
+
+    85%
+    {
+        background:yellow;
+        height:100%;
+    }
+    95%
+    {
+        background:yellow;
+        height:100px;
+    }
+
+    100%
+    {
+        background:yellow;
+        height:100px;
+    }
+
+}
+
+
+
+
+/* Animation for Third object ( Sky blue ) */
+
+@keyframes AnimateObjectThree
+{
+    0%
+    {
+        width:100px;
+    }
+
+    10%
+    {
+        background:green;
+        width:100%;
+    }
+
+    20%
+    {
+        background:green;
+        width:100px;
+    }
+
+    25%
+    {
+        background:green;
+        width:100px;
+    }
+
+    35%
+    {
+        background:red;
+        width:100%;
+    }
+    45%
+    {
+        background:red;
+        width:100px;
+    }
+
+    50%
+    {
+        background:red;
+        width:100px;
+    }
+
+    60%
+    {
+        background:yellow;
+        width:100%;
+    }
+    70%
+    {
+        background:yellow;
+        width:100px;
+    }
+
+    75%
+    {
+        background:yellow;
+        width:100px;
+    }
+
+    85%
+    {
+        background:#3888e4;
+        width:100%;
+    }
+    95%
+    {
+        background:#3888e4;
+        width:100px;
+    }
+
+    100%
+    {
+        background:#3888e4;
+        width:100px;
+    }
+
+
+}
+
+
+
+/* Animation for Fourth Object ( Green )*/
+
+@keyframes AnimateObjectFour
+{
+    0%
+    {
+        height:100px;
+    }
+
+    10%
+    {
+        background:red;
+        height:100%;
+    }
+
+    20%
+    {
+        background:red;
+        height:100px;
+    }
+
+    25%
+    {
+        background:red;
+        height:100px;
+    }
+
+    35%
+    {
+        background:red;
+        height:100%;
+    }
+    45%
+    {
+        background:yellow;
+        height:100px;
+    }
+
+    50%
+    {
+        background:yellow;
+        height:100px;
+    }
+
+    60%
+    {
+        background:#3888e4;
+        height:100%;
+    }
+    70%
+    {
+        background:#3888e4;
+        height:100px;
+    }
+
+    75%
+    {
+        background:#3888e4;
+        height:100px;
+    }
+
+    85%
+    {
+        background:green;
+        height:100%;
+    }
+    95%
+    {
+        background:green;
+        height:100px;
+    }
+
+    100%
+    {
+        background:green;
+        height:100px;
+    }
+
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container" id="Obj-container">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="controlls">
+            <button id="btn-start">Start</button>
+            <button id="btn-stop">Stop</button>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+        var startButton=document.getElementById("btn-start");
+        var stopButton =document.getElementById("btn-stop");
+        var container = document.getElementById("Obj-container");
+    
+        // Action on start Button 
+        startButton.addEventListener('click',()=>{
+            container.classList.add("startAnimation");
+        });
+    
+    
+        // Action on stop button
+        stopButton.addEventListener('click',()=>{
+            container.classList.remove("startAnimation");
+        });
+    
+    </script>
+</body>
+</html>
